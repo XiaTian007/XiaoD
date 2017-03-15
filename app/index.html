@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MetaCoin - Default Truffle App</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Ballot</h1>
+  <h3>You are <span id="balance"></span></h3>
+
+  <br>
+  <h1>Give Right To Vote</h1>
+  <br><label for="name">Name:</label><input type="text" id="name" placeholder="XiaoA"></input>
+  <br><label for="address">To Address:</label><input type="text" id="address" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><br><button id="giveRightToVote" onclick="giveRightToVote()">Confirm</button>
+  <br><br>
+  <h1>Vote</h1>
+  <br><label for="voteIndex">Vote For:</label><input type="text" id="voteIndex" placeholder="e.g.,1"></input>
+  <br><br><button id="vote" onclick="vote()">Voters</button>
+  <br><br>
+  <h1>Winning Proposal Is <span id="winningProposal"></span>  !!!!</h1>
+  <h3>Winning Point is <span id="winningPoint"></span></h3>
+  <br><br>
+  <br><br><button id="createContract" onclick="createContract()">createContract</button>
+  <span id="status"></span>
+</body>
+</html>
