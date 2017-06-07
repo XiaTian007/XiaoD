@@ -1,0 +1,32 @@
+{
+  "name": "xiaod",
+  "version": "1.0.0",
+  "description": "A safe information publish platform based on solidity ",
+  "main": "./test/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "xiaod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaTian007/XiaoD.gi.git"
+  },
+  "keywords": [
+    "xiaod1.0"
+  ],
+  "author": "summer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XiaTian007/XiaoD.gi/issues"
+  },
+  "homepage": "https://github.com/XiaTian007/XiaoD.gi#readme"
+}
