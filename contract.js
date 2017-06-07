@@ -6,8 +6,8 @@ web3.eth.defaultAccount = from;
 var fs = require("fs");
 str = "";
 var buff = fs.readFileSync('./contracts/Ballot.sol', 'utf-8');
-str = buff.toString()
-str.replace(/(\n(?=(\n+)))+/g, '')
+str = buff.replace(/\r|\n/ig, '').toString()
+console.log(str)
 calcCompiled = web3.eth.compile.solidity(str);
 console.log(calcCompiled);
 
@@ -47,8 +47,6 @@ myContractReturned = calcContract.new({
         // 函数返回对象`myContractReturned`和回调函数对象`myContract`是 "myContractReturned" === "myContract",
         // 所以最终`myContractReturned`这个对象里面的合约地址属性也会被设置。
         // `myContractReturned`一开始返回的结果是没有设置的。
-    } else {
-        console.log(err)
     }
 });
 //注意，异步执行，此时还是没有地址的。
